@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Text-to-Video Generator
 
-## Getting Started
+A modern web application built with Next.js that transforms text prompts into engaging videos with customizable animations, audio, and visual settings.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Text-to-Video Generation**: Convert text prompts into dynamic videos
+- **Customizable Animation Settings**: Control video animations and transitions
+- **Audio Integration**: Add and customize audio settings for your videos
+- **Flexible Dimensions**: Adjust video dimensions and aspect ratios
+- **Real-time Preview**: Preview your video before final generation
+- **Modern UI**: Clean, responsive interface built with Tailwind CSS and shadcn/ui
+- **TypeScript Support**: Fully typed for better development experience
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm (recommended package manager)
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/text-to-video.git
+   cd text-to-video
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🛠️ Usage
+
+1. **Enter your text prompt** in the text input field
+2. **Customize video settings**:
+   - Animation settings (transitions, effects)
+   - Audio settings (background music, voice)
+   - Dimensions (resolution, aspect ratio)
+   - Visual appearance (colors, themes)
+3. **Preview your video** in real-time
+4. **Generate and download** your final video
+
+## 🏗️ Project Structure
+
+```
+text-to-video/
+├── app/                    # Next.js App Router pages
+├── src/
+│   ├── components/         # Reusable UI components
+│   │   ├── ui/            # Base UI components (shadcn/ui)
+│   │   └── video/         # Video-specific components
+│   ├── hooks/             # Custom React hooks
+│   └── lib/               # Utility functions
+├── public/                # Static assets
+└── ...config files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Core Components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **VideoGeneration**: Main video generation interface
+- **VideoSettingsPanel**: Comprehensive settings management
+- **VideoPreview**: Real-time video preview
+- **VideoAnimationSettings**: Animation and transition controls
+- **VideoAudioSettings**: Audio customization options
+- **VideoDimensionsSettings**: Size and aspect ratio controls
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Development
 
-## Learn More
+### Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm dev          # Start development server
+pnpm build        # Build for production
+pnpm start        # Start production server
+pnpm lint         # Run ESLint
+pnpm type-check   # Run TypeScript compiler check
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: Next.js 14+ (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **State Management**: React Hooks
+- **Package Manager**: pnpm
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We welcome contributions! Here's how you can help:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Fork the repository**
+2. **Create a feature branch**
+
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+
+3. **Make your changes**
+4. **Commit your changes**
+
+   ```bash
+   git commit -m 'Add some amazing feature'
+   ```
+
+5. **Push to the branch**
+
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+
+6. **Open a Pull Request**
+
+### Development Guidelines
+
+- Follow TypeScript best practices
+- Use existing UI components from `src/components/ui`
+- Write meaningful commit messages
+- Update documentation for new features
+- Test your changes thoroughly
+
+## 🐛 Issues
+
+Found a bug or have a feature request? Please open an issue on [GitHub Issues](https://github.com/your-username/text-to-video/issues).
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/) for the amazing React framework
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- All contributors who help make this project better
+
+## 📞 Support
+
+- 📧 Email: <qilei0529@gmail.com>
+- 🐦 X: [@qilei](https://x.com/qilei)
+
+---
+
