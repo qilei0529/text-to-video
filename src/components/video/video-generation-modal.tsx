@@ -96,7 +96,7 @@ export function VideoGenerationModal({
           />
 
           {generationState.isRecording && (
-            <div className="flex flex-col gap-2 w-[300px]">
+            <div className="flex flex-col gap-2">
               <div className="flex justify-between text-sm mb-2">
                 <span>Recording Progress</span>
                 <span>{Math.round(generationState.progress)}%</span>
