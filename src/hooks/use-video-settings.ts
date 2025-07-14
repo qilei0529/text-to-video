@@ -7,15 +7,15 @@ const STORAGE_KEY = 'video-generator-settings'
 
 const DEFAULT_SETTINGS: VideoSettings = {
   text: "Enter your article text here...\n\nThis is a sample text that will scroll from bottom to top in the video.\n\nYou can customize the font size, scroll speed, and other settings to create your perfect text video.",
-  fontSize: 48,
-  scrollSpeed: 50,
-  width: 1920,
-  height: 1080,
+  fontSize: 32,
+  scrollSpeed: 20,
+  width: 640,
+  height: 400,
   backgroundColor: "#000000",
   textColor: "#ffffff",
   fontFamily: "Arial",
-  lineHeight: 1.4,
-  padding: 80,
+  lineHeight: 1.3,
+  padding: 20,
   // Audio settings
   audioEnabled: false,
   audioFile: null,
