@@ -8,7 +8,7 @@ export function useVideoRecording() {
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const recordedChunksRef = useRef<Blob[]>([])
   const audioContextRef = useRef<AudioContext | null>(null)
-  const { startAnimation, drawFrame } = useVideoAnimation()
+  const { drawFrame } = useVideoAnimation()
 
   const [state, setState] = useState<VideoGenerationState>({
     isRecording: false,
@@ -49,7 +49,6 @@ export function useVideoRecording() {
 
     // Get the best supported video format
     const mimeType = getSupportedMimeType()
-    const isMP4 = mimeType.includes('mp4')
 
     // Create video stream from canvas
     const videoStream = canvas.captureStream(30) // 30 FPS
@@ -209,7 +208,7 @@ export function useVideoRecording() {
 
     let scrollY = -settings.padding
     const endScrollY = settings.height + totalTextHeight + settings.padding
-    let startTime = Date.now()
+    const startTime = Date.now()
 
     const animate = () => {
       const elapsed = Date.now() - startTime
